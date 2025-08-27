@@ -1,4 +1,4 @@
-# 📚 Escuela — Examen POO (Python) + Git/GitHub
+# Escuela — Examen POO (Python) + Git/GitHub
 
 Sistema de consola para gestionar una **escuela** con **estudiantes, profesores y materias**.  
 Permite **registrar notas**, **calcular promedios** y **listar estudiantes**, aplicando **herencia, polimorfismo y encapsulamiento** en Python y un **flujo de colaboración** con Git/GitHub usando ramas protegidas.
@@ -22,7 +22,7 @@ Permite **registrar notas**, **calcular promedios** y **listar estudiantes**, ap
 
 ---
 
-## 🎯 Objetivo del proyecto
+## Objetivo del proyecto
 
 - Implementar una aplicación mínima que resuelva las operaciones del tema **Escuela**.  
 - Demostrar **POO en Python**: **herencia**, **polimorfismo** y **encapsulamiento**.  
@@ -30,7 +30,7 @@ Permite **registrar notas**, **calcular promedios** y **listar estudiantes**, ap
 
 ---
 
-## ⚙️ Requisitos
+## Requisitos
 
 - **Python 3.10+**  
 - **Git** y una cuenta de **GitHub**  
@@ -38,38 +38,35 @@ Permite **registrar notas**, **calcular promedios** y **listar estudiantes**, ap
 
 ---
 
-## 🧱 Estructura del proyecto
+## Estructura del proyecto
 
 escuela/
-│── main.py # Punto de entrada: menú de consola
-│
+├── main.py # Punto de entrada: menú de consola
 ├── models/ # Modelos de dominio (POO)
 │ ├── persona.py # Clase base: Persona
 │ ├── estudiante.py # Clase Estudiante (hereda de Persona)
 │ ├── profesor.py # Clase Profesor (hereda de Persona)
 │ └── materia.py # Clase Materia
-│
 ├── services/ # Casos de uso / lógica de aplicación
 │ ├── gestion_estudiantes.py # Altas/listados y consultas de estudiantes
 │ └── gestion_notas.py # Registro de notas y cálculo de promedios
-│
-├── data/ # (Opcional) persistencia ligera
+├── data/ (opcional) # Persistencia ligera
 │ └── .gitkeep
-│
 └── README.md
 ---
 
-## ▶️ Paso a paso: ejecución local
+##  Paso a paso: ejecución local
 
 1. **Clonar el repositorio**
    ```bash
    git clone https://github.com/Stivendor/Escuela.git
    cd escuela
 Ejecutar el programa
+   
+   ```bash
+   python main.py
+   ```
 
-bash
-Copiar código
-python main.py
 Seguir las instrucciones del menú en consola
 
 🔀 Paso a paso: flujo de trabajo en Git/GitHub
@@ -116,17 +113,3 @@ El main.py mostrará opciones como:
 5. Calcular promedio de un estudiante
 6. Listar estudiantes
 7. Salir
-
-🖥️ Ejemplo de uso
->>> 1
-Ingrese nombre del estudiante: Ana
-Ingrese edad: 20
-Estudiante registrado con éxito.
-
->>> 4
-Seleccione estudiante: Ana
-Ingrese nota: 4.5
-Nota registrada.
-
->>> 5
-Promedio de Ana: 4.5
