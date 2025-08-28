@@ -4,7 +4,7 @@ class Persona:
         self.__nombre = nombre
         self.__edad = edad
 
-    #Getters y setters (encapsulamiento)
+    #Getters y setters (encapsulamiento).
     def get_nombre(self):
         return self.__nombre
     

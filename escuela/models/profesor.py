@@ -1,5 +1,5 @@
 from .persona import Persona
-
+#hereda de persona
 class Profesor(Persona):
     def __init__(self, nombre: str, edad: int, especialidad: str):
         super().__init__(nombre, edad)

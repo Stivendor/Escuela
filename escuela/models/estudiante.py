@@ -2,7 +2,7 @@ from .persona import Persona
 
 class Estudiante(Persona):
     def __init__(self, nombre: str, edad: int, matricula: str):
-        super().__init__(nombre, edad) #llama al constructor de la clase Persona
+        super().__init__(nombre, edad) #llama al constructor de la clase Persona.
         self.__matricula = matricula
         self.notas = {}
     
